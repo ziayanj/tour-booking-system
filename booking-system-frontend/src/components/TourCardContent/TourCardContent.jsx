@@ -20,7 +20,6 @@ const TourCardContent = ({ cardData, bookingId }) => {
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [tourDaysLeft, setTourDaysLeft] = useState();
 
-  console.log(startDate, calculateDaysToDate(startDate));
   const handleDelete = useCallback(() => {
     setTourDaysLeft(calculateDaysToDate(startDate));
     setIsDeleteModalOpen(true);
