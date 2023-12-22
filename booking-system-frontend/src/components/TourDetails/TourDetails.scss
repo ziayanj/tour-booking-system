@@ -1,0 +1,79 @@
+.tour-details-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 10rem;
+
+  .tour-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+  }
+
+  .tour-info {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    color: var(--secondary-light-text);
+
+    > * {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .tour-images {
+    display: flex;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .main-image {
+      width: 650px;
+      margin: 2rem 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      .main-image {
+        width: 100%;
+      }
+    }
+
+    .side-images {
+      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      justify-content: center;
+      align-items: center;
+
+      .side-image {
+        width: 335px;
+      }
+
+      @media screen and (max-width: 770px) {
+        .side-image {
+          width: 100%;
+        }
+      }
+    }
+
+    img {
+      border-radius: 0.75rem;
+    }
+  }
+
+  .tour-description {
+    margin-bottom: 1rem;
+    color: #404040;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+}

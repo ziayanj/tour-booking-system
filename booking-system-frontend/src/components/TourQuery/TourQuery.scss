@@ -1,0 +1,45 @@
+.query-item {
+  padding: 0 2rem;
+  display: flex;
+  column-gap: 1rem;
+
+  .query-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    .query-text {
+      text-transform: capitalize;
+      font-weight: bolder;
+      font-size: 1.25rem;
+      color: var(--dark-text);
+    }
+  
+    .query-element {
+      font-size: smaller;
+   
+      input {
+        border: 0;
+      }
+  
+      .price-selector {
+        width: 8rem;
+      }
+    }  
+  }
+}
+
+.query-separator {
+  border-left: 2px solid #EBEBEB;
+}
+
+@media screen and (max-width: 1100px) {
+  .query-item {
+    padding: 1rem 0;
+  }
+
+  .query-separator {
+    border-left: unset;
+    border-top: 2px solid #EBEBEB;
+  }
+}

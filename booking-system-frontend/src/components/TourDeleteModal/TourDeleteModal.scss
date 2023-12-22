@@ -1,0 +1,20 @@
+.delete-modal {
+  .modal-ok-btn {
+    background-color: var(--danger-dark);
+  }
+
+  .modal-cancel-btn {
+    color: var(--light-text);
+    border: 1px solid var(--light-text);
+  }
+
+  .modal-btn {
+    font-weight: 500;
+  }
+
+  .ant-modal-title {
+    color: var(--danger-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
