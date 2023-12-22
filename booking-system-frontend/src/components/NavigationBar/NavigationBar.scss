@@ -1,0 +1,41 @@
+.navbar-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  column-gap: 3rem;
+
+  .navbar-items {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .navbar-item {
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: var(--dark-text);
+
+      &:visited {
+        color: unset;
+      }
+
+      &.active {
+        border-bottom: 2px solid var(--danger);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar-container {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-container {
+    row-gap: 1rem;
+    flex-direction: column;
+  }
+}

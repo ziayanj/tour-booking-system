@@ -1,0 +1,27 @@
+.tour-itenerary-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+
+  .itenerary-cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .book-btn-container {
+    text-align: center;
+
+    .tour-book-btn {
+      font-weight: 600;
+      background-color: var(--danger);
+      width: 335px;
+
+      &:hover {
+        background-color: var(--danger);
+      }
+    }  
+  }
+}
