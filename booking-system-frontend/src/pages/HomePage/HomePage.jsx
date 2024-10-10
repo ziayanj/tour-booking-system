@@ -60,7 +60,7 @@ const HomePage = () => {
       <div className="popular-search-container">
         {!!popularLocations.length && (
           <>
-            <h2 className="popular-search">Popular Search</h2>
+            <h2 className="popular-search">Popular Destinations</h2>
             <div className="popular-search-items">
               {popularLocations.map(location => <PopularSearchItem key={location} itemText={location} />)}
             </div>
